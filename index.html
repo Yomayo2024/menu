@@ -203,11 +203,12 @@ input[type="search"], #search {
 
       /* Стиль для самого великого зображення */
       #modalImg {
+           width: 80%; /* Додайте це: фото завжди розтягуватиметься на 80% ширини екрану */
           max-width: 95%;
           max-height: 95%;
+          object-fit: contain; /* Щоб фото не деформувалося */
           border: 2px solid white;
           border-radius: 5px;
-          transition: transform 0.2s;
       }
 
       /* Курсор лупи для маленьких картинок */
